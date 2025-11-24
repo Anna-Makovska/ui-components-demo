@@ -1,11 +1,13 @@
 import { Button } from './components/Button'
 import { InputField } from './components/InputField'
 import { Card } from './components/Card'
+import { Navbar } from './components/Navbar'
 
 function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-50">
-      <div className="flex flex-col items-center gap-8">
+    <div className="min-h-screen bg-slate-50">
+      <Navbar />
+      <main className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 py-12">
         <div className="w-full max-w-sm rounded-2xl bg-white p-6 shadow-sm">
           <InputField
             label="Email address"
@@ -25,7 +27,7 @@ function App() {
         >
           <Button className="mt-2 w-full">Call to action</Button>
         </Card>
-      </div>
+      </main>
     </div>
   )
 }
