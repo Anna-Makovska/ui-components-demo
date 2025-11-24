@@ -1,5 +1,6 @@
 import { Button } from './components/Button'
 import { InputField } from './components/InputField'
+import { Card } from './components/Card'
 
 function App() {
   return (
@@ -18,6 +19,12 @@ function App() {
           <Button>Primary</Button>
           <Button variant="secondary">Secondary</Button>
         </div>
+        <Card
+          title="Starter card"
+          description="Use cards to group related content like stats, settings, or quick actions."
+        >
+          <Button className="mt-2 w-full">Call to action</Button>
+        </Card>
       </div>
     </div>
   )
